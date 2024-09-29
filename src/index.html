@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableGenerator</title>
+    <link href="../node_modules/tabulator-tables/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="../node_modules/tabulator-tables/dist/js/tabulator.min.js"></script>
+    <style>
+        
+
+        /* Table Styling */
+        #usersTable {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    table-layout: fixed; /* Ensure cells take up equal width */
+}
+
+#usersTable th, #usersTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #dddddd; /* Add borders to cells */
+    word-wrap: break-word; /* Ensure text wraps within cells */
+   
+}
+#usersTable td {
+    width: 100%;
+}
+#usersTable thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+#usersTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#usersTable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#usersTable tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+#usersTable tbody tr:hover {
+    background-color: #e0e0e0;
+}
+    </style>
+</head>
+<body>
+    <div id="usersTable" class=""></div>
+    <div id="example-table"></div>
+    <script type="module" src="tableGenerator.js"></script>
+</body>
+</html>
